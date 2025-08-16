@@ -6,8 +6,26 @@
 :root {
   --card: #10172a;
 }
-a { @apply text-brand-primary hover:opacity-80 transition; }
-.container { @apply max-w-6xl mx-auto px-4; }
-.card { @apply bg-[color:var(--card)] rounded-3xl p-6 shadow; }
-.btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium bg-brand-primary text-white hover:opacity-90; }
-.input { @apply w-full rounded-xl px-4 py-2 bg-slate-800/60 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-primary; }
+a {
+  @apply text-brand-primary hover:opacity-80 transition;
+}
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+.card {
+  @apply bg-[color:var(--card)] rounded-3xl p-6 shadow;
+}
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium bg-brand-primary text-white hover:opacity-90;
+}
+.input {
+  @apply w-full rounded-xl px-4 py-2 bg-slate-800/60 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-primary;
+}
+/* hide horizontal scrollbar (opsional) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
